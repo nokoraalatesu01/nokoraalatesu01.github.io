@@ -1,0 +1,81 @@
+html{
+    background-color: black;
+}
+h1, h2{
+    color: yellow;
+    font-size: 100px;
+    display: block;
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    font-family: Dancing Script;
+}
+.app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.buttonGroup{
+    margin-top: 150px;
+    padding: 0 380px 0 250px;
+    margin: 200px 0 200px 0;
+}
+button{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    padding: 20px 70px;
+    background-color: rgb(rgba(243, 237, 204, 0.747), green, blue);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 20px; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+button:first-child, button:last-child{
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+}
+
+button:first-child:before, button:last-child::before{
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom:-5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity:0;
+    transition: opacity 0,5s;
+}
+button:first-child:hover:before, button:last-child:hover::before{
+    opacity: 1;
+    z-index: -1;
+}
+button:hover{
+   z-index:1;
+   animation: glow 8s linear infinite;
+}
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+    100%{background-position: 400%;
+    }
+}
+h2{
+    margin-top: 130px;
+    font-size: 30px;
+}
+#slidebar {
+    color: yellow;
+    box-sizing: border-box;
+    margin-top:200px;
+    position: relative;
+}
