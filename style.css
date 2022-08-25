@@ -2,6 +2,7 @@ html{
     background-image: url("imager_1_62098_700.jpg") ;
     background-size:cover;
     background-repeat: no-repeat;
+
 }
 h1, h2{
     color: yellow;
@@ -20,7 +21,7 @@ h1, h2{
 }
 .buttonGroup{
     margin-top: 150px;
-    padding: 0 380px 0 250px;
+    padding: 0 400px 0 200px;
     margin: 200px 0 200px 0;
 }
 button{
@@ -51,7 +52,13 @@ button:first-child:before, button:last-child::before{
     right: -5px;
     bottom:-5px;
     left: -5px;
-    border-radius: 50px;
+    width: 500px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    border: 2px solid red;
+    top: 100px;
+    left: 300px;
     filter: blur(20px);
     opacity:0;
     transition: opacity 0,5s;
@@ -80,4 +87,18 @@ h2{
     box-sizing: border-box;
     margin-top:200px;
     position: relative;
+}
+.popup {
+    font-size:100px;
+    color: #fff;
+    text-align: center;
+    top:0px;
+}
+h3{ 
+    color: white;
+    top: 100px; 
+
+}
+a{
+    text-decoration: none;
 }
