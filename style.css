@@ -1,5 +1,7 @@
 html{
-    background-color: black;
+    background-image: url("imager_1_62098_700.jpg") ;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 h1, h2{
     color: yellow;
